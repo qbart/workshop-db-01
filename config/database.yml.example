@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: bart
+  password:
+
+development:
+  <<: *default
+  database: movietape
+
+test:
+  <<: *default
+  database: movietape_test

@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+      <th>Director</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @directors.each do |director| %>
+      <tr>
+        <td><%= director.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

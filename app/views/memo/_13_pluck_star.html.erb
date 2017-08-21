@@ -1,0 +1,34 @@
+<% log_debug "\npluck {" %>
+
+<h3>Actors:</h3>
+<table>
+  <tbody>
+    <% @movie.actors.pluck('*').each do |id, name, _, _| %>
+      <tr>
+        <td><%= id %></td>
+        <td><%= name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% log_debug "}\n" %>
+
+
+<% log_debug "\nactors {" %>
+
+<h3>Actors:</h3>
+<table>
+  <tbody>
+    <% @movie.actors.each do |actor| %>
+      <tr>
+        <td><%= actor.id %></td>
+        <td><%= actor.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% log_debug "}\n" %>
+
+

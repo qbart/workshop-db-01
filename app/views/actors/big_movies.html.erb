@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @actors.each do |actor| %>
+      <tr>
+        <td><%= actor.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

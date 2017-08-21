@@ -1,0 +1,32 @@
+<% log_debug "\ids {" %>
+
+<h3>Actors:</h3>
+<table>
+  <tbody>
+    <% @movie.actor_ids.each do |id| %>
+      <tr>
+        <td><%= id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% log_debug "}\n" %>
+
+
+<% log_debug "\nactors {" %>
+
+<h3>Actors:</h3>
+<table>
+  <tbody>
+    <% @movie.actors.each do |actor| %>
+      <tr>
+        <td><%= actor.id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% log_debug "}\n" %>
+
+

@@ -1,0 +1,17 @@
+<li>
+  <%= title %>.
+
+  <blockquote>
+    <%= hint %>.
+  </blockquote>
+
+  <p>
+    <ul>
+      <%- links.each_with_index do |link, index| %>
+        <li>
+          <%= link_to "Implementation ##{index + 1}", link %>
+        </li>
+      <%- end %>
+    </ul>
+  </p>
+</li>

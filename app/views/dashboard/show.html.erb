@@ -1,0 +1,46 @@
+<ol>
+  <%= render 'item',
+        title: 'Movies index with director',
+        hint: 'Using includes for eager loading',
+        links: [directors_path] %>
+
+  <%= render 'item',
+        title: 'Movies show with details',
+        hint: 'Using includes for eager loading with single resource',
+        links: [movie_path(@movie)] %>
+
+  <%= render 'item',
+        title: 'Association memoization',
+        hint: 'Caching relationships',
+        links: [memo_index_path] %>
+
+  <%= render 'item',
+        title: 'Movies index with scoring',
+        hint: 'Using average to calculate score for each movie in the list',
+        links: [movies_path] %>
+
+  <%= render 'item',
+        title: 'Movies count by letters',
+        hint: 'Grouping movies by letter',
+        links: [letters_movies_path] %>
+
+  <%= render 'item',
+        title: 'High rated movies with scoring',
+        hint: 'Using having to match based on the result of aggregation functions',
+        links: [high_rated_movies_path] %>
+
+  <%= render 'item',
+        title: 'Director with movies whereas its actors name start with letter T',
+        hint: 'Using distinct to eliminate duplicates',
+        links: [actors_directors_path] %>
+
+  <%= render 'item',
+        title: 'Actors who played in big cast movies',
+        hint: 'Using nested queries',
+        links: [big_movies_actors_path] %>
+
+  <%= render 'item',
+        title: 'Popular movies',
+        hint: 'Using nested queries',
+        links: [popular_movies_path] %>
+</ol>

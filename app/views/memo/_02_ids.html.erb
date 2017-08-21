@@ -1,0 +1,16 @@
+<%- 2.times do |i| %>
+  <% log_debug "\nactor IDS #{i} {" %>
+
+  <h3>Actor IDS:</h3>
+  <table>
+    <tbody>
+      <% @movie.actor_ids.each do |id| %>
+        <tr>
+          <td><%= id %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <% log_debug "}\n" %>
+<% end %>

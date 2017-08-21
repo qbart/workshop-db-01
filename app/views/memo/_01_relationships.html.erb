@@ -1,0 +1,29 @@
+<%- 2.times do |i| %>
+  <% log_debug "\ndirector #{i} {" %>
+
+  <h3>
+    directed by
+    <%= @movie.director.name %>
+  </h3>
+
+  <% log_debug "}\n" %>
+<% end %>
+
+<%- 2.times do |i| %>
+  <% log_debug "\nactors #{i} {" %>
+
+  <h3>Actors:</h3>
+  <table>
+    <tbody>
+      <% @movie.actors.each do |actor| %>
+        <tr>
+          <td><%= actor.id %></td>
+          <td><%= actor.name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <% log_debug "}\n" %>
+<% end %>
+
